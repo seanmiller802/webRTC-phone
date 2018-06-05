@@ -1,0 +1,161 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*=========================== APP BAR ================================*/
+.logo {
+  float: right;
+  width: 170px;
+  margin-top: 10px;
+}
+
+/*=========================== DRAWER ===================================*/
+/* this toggles the drawer between hidden and in view*/
+.callButton {
+  float: right;
+  margin: 20px;
+}
+
+/*=========================== COUNTRY SELECTOR  ========================*/
+.menuItemDialCode {
+  float: right;
+}
+
+/* Selected Country: holds the selected country flag icon and country name that
+gets displayed when a country is selected */
+.selectedCountryItem {
+  padding: 2px;
+}
+
+.flagIcon {
+  margin-bottom: 2px;
+  margin-right: 10px;
+  padding: 0px;
+}
+
+/*=========================== PHONE PAD ================================*/
+/*holds the agent status dropdown and settings icon gear*/
+.settings {
+  width: 100%;
+  height: 45px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.settings-icon {
+  display: inline;
+  height: 45px;
+  float: right;
+  padding-top: 10px;
+}
+
+.settings-icon:hover {
+  cursor: pointer;
+}
+
+/* icons for the three different agent status */
+.availableIcon {
+  color: #00dd00;
+}
+
+.unavailableIcon {
+  color: #FF9800;
+}
+
+.offlineIcon {
+  color: #F44336;
+}
+
+.phone {
+  width: 95%;
+  margin: auto;
+  padding: 0px;
+}
+
+.phoneStatus { /* displays the phone status (Idle, Ringing, Connected, Incoming Call) and call duration*/
+  margin-bottom: 20px;
+}
+
+.numberInput {
+  display: inline;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.keypad {
+  width: 100%;
+  margin: 0px;
+}
+
+.keypadKey {
+  width: 33.33%;
+}
+
+/*========================= CALL CONTROLS ================================*/
+.callControls {
+  width: 100%;
+  height: 88px;
+}
+
+.callControlButton {
+  margin-top: 20px;
+}
+
+.placeCall,
+.hangupCurrentCall2 {
+  width: 100%;
+  height: 88px;
+  text-align: center;
+}
+
+.hangupCurrentCall,
+.muteCurrentCall,
+.rejectIncomingCall,
+.answerIncomingCall {
+  display: inline-block;
+  width: 50%;
+  height: 88px;
+  text-align: center;
+}
+
+/*=========================== SETTINGS DIALOG ================================*/
+.agentStatus {
+  display: inline;
+  float: left;
+}
+
+.login-fields {
+  width: 100%;
+  margin: auto;
+}
+
+.configHeader {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.credentialHeader {
+  text-align: left;
+}
+
+.toggles {
+  width: 100%;
+}
+
+/* buttons at the bottom of each settings tab */
+.tab1-actions,
+.tab2-actions,
+.tab3-actions,
+.tab4-actions {
+  margin-top: 20px;
+  text-align: right;
+}
