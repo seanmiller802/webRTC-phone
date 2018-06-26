@@ -1,7 +1,7 @@
 const express    = require("express");
 const formidable = require("express-formidable");
 const request    = require("request");
-const PORT       = 8080;
+const PORT       = process.env.PORT || 8080;
 const btoa       = require('btoa'); // use this for basic authentication
 const https      = require('https');
 
@@ -22,7 +22,7 @@ app.post('/makeCall/', function(req, res) {
   // prepare the header
   let postHeaders = {
     'Content-Type' : 'application/json',
-    "Authorization": "Basic " + btoa("MAMMJLN2YWZJFMMME5YZ:ZmNjYmRkYWVmZTkzNWNlZmI4NGRhYzYwMjhhMWQw")
+    "Authorization": "Basic " + btoa(process.env.PLIVO_AUTH_ID,process.env.PLIVO_AUTH_TOKEN),
   };
 
   // set the post options
