@@ -303,6 +303,7 @@ class PhonePad extends React.Component {
   // if call fails
   onCallFailed() {
     this.setState({ phoneStatus: 'Phone: Idle...'})
+    console.log("call failed");
   }
 
   // once call is terminated
