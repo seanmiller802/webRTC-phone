@@ -59,5 +59,5 @@ app.post('/makeCall/', function(req, res) {
 })
 
 app.listen(PORT, function() {
-  console.log("listening on port 8080");
+  console.log("listening on port", PORT);
 });
