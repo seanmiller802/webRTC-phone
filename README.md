@@ -132,11 +132,11 @@ We should now have access to both numbers when our PHLO receives the HTTP reques
 
 
 ## Basic Authentication
-You will need to provide your Plivo Auth ID and Auth Token in /server/index.js in the HTTP request headers
+You will need to provide your Plivo Auth ID and Auth Token in /server/index.js in the HTTP request headers. Store these as environment variable
 ```
   let postHeaders = {
     'Content-Type' : 'application/json',
-    "Authorization": "Basic " + btoa("AuthID:AuthToken")
+    "Authorization": "Basic " + btoa("process.env.AuthID:process.env.AuthToken")
   };
   
 ```
